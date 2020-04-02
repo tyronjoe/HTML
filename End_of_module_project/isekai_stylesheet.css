@@ -1,0 +1,12 @@
+.page {
+    background-color: grey;
+}
+
+.card {
+    background-color: skyblue;
+    padding: 10px;
+}
+
+.row {
+    padding-bottom: 10px;
+}
