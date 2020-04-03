@@ -2,11 +2,16 @@
 <html>
 
 <head>
-  <title>Company Profiles</title>
+  <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <!-- Tab Name -->
+  <title>Company Profiles</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Personal stylesheet -->
   <link rel="stylesheet" type="text/css" href="isekai_stylesheet.css">
+  <!-- Personal stylesheet above -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -19,6 +24,7 @@
 </head>
 
 <body class="page">
+  <!--Narvagation Bar-->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <a class="navbar-brand" href="#">
       <img src="Blue_eyes_white_dragon.png" alt="Logo" style="width: 65px;">
@@ -37,56 +43,92 @@
         <a class="nav-link" href="#">Admin</a>
       </li>
     </ul>
+    <!-- Button for profile creation -->
+    <button class="cbutton" data-toggle="modal" data-target="#addUser">Create Profile</button>
   </nav>
-  <div class="container-fluid">
+  <!--Cards In Column form, 3 columns per row-->
+  <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm">
+        <!--Employee 1: Ains Ooal Gown-->
         <div class="card">
-          <img src="ains.jpg" alt="undead">
+          <img src="ains.jpg" alt="undead" class="profile-image">
           <h4 class="card-title">Ains Ooal Gown</h4>
           <p class="card-text">Email: undeadking49@gmail.com</p>
           <p class="card-text">Moblie Number: 081 453 7891</p>
           <p class="card-text">Landline: 021 712 4937</p>
-          <button type="button" class="btn-secondary btn-md" data-toggle="modal" data-target="#employee1Modal">Further
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee1Modal">Further
             Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm">
+        <!--Employee 2: Kazuma Satou-->
         <div class="card">
-          <img src="kazuma_png.png" alt="undead">
+          <img src="kazuma_png.png" alt="young male" class="profile-image">
           <h4 class="card-title">Kazuma Satou</h4>
           <p class="card-text">Email: budgethero02@gmail.com</p>
           <p class="card-text">Moblie Number: 081 687 0345</p>
           <p class="card-text">Landline: 021 712 6999</p>
-          <button type="button" class="btn-secondary btn-md" data-toggle="modal" data-target="#employee2Modal">Further
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee2Modal">Further
             Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm">
+        <!--Employee 3: Noafumi Iwatani-->
         <div class="card">
-          <img src="naofumi.jpg" alt="undead">
+          <img src="naofumi.jpg" alt="young male" class="profile-image">
           <h4 class="card-title">Noafumi Iwatani</h4>
           <p class="card-text">Email: shieldhero91@gmail.com</p>
           <p class="card-text">Moblie Number: 081 111 645</p>
           <p class="card-text">Landline: 021 712 0215</p>
-          <button type="button" class="btn-secondary btn-md" data-toggle="modal" data-target="#employee3Modal">Further
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee3Modal">Further
             Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm">
+        <!--Employee 4: Tanya Dergurechaff-->
         <div class="card">
-          <img src="Tanya-Degurechaff.jpg" alt="undead">
+          <img src="Tanya-Degurechaff.jpg" alt="litte girl" class="profile-image">
           <h4 class="card-title">Tanya Dergurechaff</h4>
           <p class="card-text">Email: lolinazi88@gmail.com</p>
           <p class="card-text">Moblie Number: 081 366 8425</p>
           <p class="card-text">Landline: 021 712 3002</p>
-          <button type="button" class="btn-secondary btn-md" data-toggle="modal" data-target="#employee4Modal">Further
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee4Modal">Further
             Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
+        </div>
+      </div>
+      <div class="col-sm">
+        <!--Employee 5: Shirogane Kei-->
+        <div class="card">
+          <img src="shiroe.png" alt="young male" class="profile-image">
+          <h4 class="card-title">Shirogane Kei</h4>
+          <p class="card-text">Email: evilmegane36@gmail.com</p>
+          <p class="card-text">Moblie Number: 081 664 4444</p>
+          <p class="card-text">Landline: 021 712 2648</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee5Modal">Further
+            Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
+        </div>
+      </div>
+      <div class="col-sm">
+        <!--Employee 6: Sora-->
+        <div class="card">
+          <img src="sora.png" alt="young male" class="profile-image">
+          <h4 class="card-title">Sora</h4>
+          <p class="card-text">Email: broneet67@gmail.com</p>
+          <p class="card-text">Moblie Number: 081 647 0312</p>
+          <p class="card-text">Landline: 021 712 4650</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee6Modal">Further
+            Information</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delprofile">Delete</button>
         </div>
       </div>
     </div>
+    <!-- Modal for Ains Ooal Gown -->
     <div class="modal fade" id="employee1Modal">
       <div class="modal-dialog modal-dialog-scrollable modal-md">
         <div class="modal-content">
@@ -110,6 +152,7 @@
         </div>
       </div>
     </div>
+    <!-- Modal for Kazuma Satou -->
     <div class="modal fade" id="employee2Modal">
       <div class="modal-dialog modal-dialog-scrollable modal-md">
         <div class="modal-content">
@@ -133,6 +176,7 @@
         </div>
       </div>
     </div>
+    <!-- Modal for Naofumi Iwatani -->
     <div class="modal fade" id="employee3Modal">
       <div class="modal-dialog modal-dialog-scrollable modal-md">
         <div class="modal-content">
@@ -156,6 +200,7 @@
         </div>
       </div>
     </div>
+    <!-- Modal for Tanya Dergurechaff -->
     <div class="modal fade" id="employee4Modal">
       <div class="modal-dialog modal-dialog-scrollable modal-md">
         <div class="modal-content">
@@ -173,6 +218,139 @@
             <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Modal for Shirogane Kei -->
+    <div class="modal fade" id="employee5Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Further Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>Home Address: 611-0043
+              58 Ijiri, Iseda, Uji, Kyoto</p>
+            <p>Next Of Kin: None</p>
+            <p>Next Of Kin Contact Details: None
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Sora -->
+    <div class="modal fade" id="employee6Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Further Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>Home Address: 114-8539
+              2-4-4 Higashitabata, Kita, Tokyo</p>
+            <p>Next Of Kin: Shiro (Step-sister)</p>
+            <p>Next Of Kin Contact Details:
+              <ul>
+                <li>Email: bigbrainmove@gmail.com</li>
+                <li>Cell: 081 322 6456</li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Deletion Modal -->
+    <div class="modal" id="delprofile">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Are you sure you want to delete this profile?</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <button class="btn btn-success">Yes</button>
+            <button class="btn btn-danger">No</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Form for adding a new User Profile -->
+    <div class="modal" id="addUser">
+      <div class="modal-content">
+        <form>
+          <h3>Profile Creation</h3>
+          <p class="form-text">Fill in this form to create a profile</p>
+          <hr>
+          <div class="form-group">
+            <label for="image">Profile Picture</label>
+            <input type="file" class="form-control" id="image" placeholder="Upload Image" name="image" required>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="userFirstName">First Name</label>
+              <input type="text" class="form-control" id="userFirstName" placeholder="Enter First Name"
+                name="userFirstName" required>
+            </div>
+            <div class="col">
+              <label for="userSurname">Last Name</label>
+              <input type="text" class="form-control" id="userSurname" placeholder="Enter Last Name" name="userSurname"
+                required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="userEmail">Email Address</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="Enter Email Address" name="userEmail"
+              required>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="userCell">Cell Number</label>
+              <input type="text" class="form-control" id="userCell" placeholder="Enter Cell Number" name="userCell"
+                required>
+            </div>
+            <div class="col">
+              <label for="userLandline">Landline Number</label>
+              <input type="text" class="form-control" id="userLandline" placeholder="Enter Landline Number"
+                name="userLandline" required>
+            </div>
+          </div>
+          <h3>Next of Kin</h3>
+          <p class="form-text">Enter details for next of kin. <strong>This will only be available inside your
+              profile</strong></p>
+          <hr>
+          <div class="form-row">
+            <div class="col-8">
+              <label for="kinName">Full Name</label>
+              <input type="text" class="form-control" id="kinName" placeholder="Enter Full Name" name="kinName"
+                required>
+            </div>
+            <div class="col">
+              <label for="relation">Relation To You (<i>Son, Father, Wife, etc</i>)</label>
+              <input type="text" class="form-control" id="relation" name="relation" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="kinEmail">Email Address</label>
+            <input type="email" class="form-control" id="kinEmail" placeholder="Enter Email Address" name="kinEmail"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="kinCell">Cell Number</label>
+            <input type="text" class="form-control" id="kinCell" placeholder="Enter Email" name="kinCell" required>
+          </div>
+          <button type="submit" class="btn-success">Submit</button>
+          <button type="button" class="btn-danger" data-dismiss="modal">Close</button>
+        </form>
       </div>
     </div>
   </div>
