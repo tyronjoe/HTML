@@ -31,3 +31,8 @@
 .col-sm {
     padding: 8px;
 }
+
+/* MODAL STYLING */
+.space {
+    visibility: hidden;
+}
